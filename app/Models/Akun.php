@@ -14,4 +14,8 @@ class Akun extends Model
     public function kategori(){
         return $this->belongsTo(Kategori::class, 'kategori_id');
     }
+
+    public function status(){
+        return $this->belongsTo(Status::class, 'status_id');
+    }
 }
